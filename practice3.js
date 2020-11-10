@@ -20,35 +20,70 @@
 
 // - створити функцію яка приймає три числа
 // та виводить та повертає найменьше.
-//
+//1)
 // function retNumber (x, y, z){
 //     console.log(x, y, z);
 //     let numb = Math.min(x, y, z)
 //     console.log(numb);
 // }
 // retNumber(24, 78, 43);
+//
+// 2)
+// function retNumber (x, y, z){
+//     console.log(x, y, z);
+//     let numb = Math.min(x, y, z);
+//     return numb;
+// }
+// let numb = retNumber(244, 78, 43);
+//
+// console.log(numb);
 
 // - створити функцію яка приймає три числа
 // та виводить та повертає найбільше.
-//
+//1)
 // function retNumber (x, y, z){
 //     console.log(x, y, z);
 //     let numb = Math.max(x, y, z)
 //     console.log(numb);
 // }
 // retNumber(24, 78, 43);
+//
+//2)
+// function retNumber (x, y, z){
+//     console.log(x, y, z);
+//     let numb = Math.max(x, y, z);
+//     return numb;
+// }
+// let numb = retNumber(244, 788, 43);
+//
+// console.log(numb);
 
 // - створити функцію яка приймає будь-яку кількість чисел,
 // повертає найменьше, а виводить найбільше
-//
+// 1)
 // function retNumber (){
-//     console.log();
-//     let numb = Math.min();
-//     return numb;
+//     let min = Math.min();
+//     let max = Math.max();
+//     console.log(min);
+//     return max;
 // }
-// let numb2 = Math.max();
-// console.log(numb2);
-// retNumber();
+// retNumber ();
+// console.log(max);
+//
+// 2)
+// function retNumber (){
+//     console.log(arguments);
+//     let min = arguments[0];
+//     let max = arguments[0];
+//     for (const z of arguments) {
+//         if (z > max) max = z;
+//         if (z < min) min = z;
+//     }
+//     console.log(min);
+//     return max;
+// }
+// let max = retNumber (9, 2, 4, 16, 7, 8);
+// console.log (max);
 
 // - створити функцію яка виводить масив
 //
@@ -59,20 +94,97 @@
 // funArr (numb);
 
 // - створити функцію яка повертає найбільше число з масиву
+//
+// function funArr(arr){
+//     console.log(arr);
+//     let numb = arr[0];
+//     for (const xxx of arr) {
+//         if(numb < arr) numb = arr
+//     }
+//     return numb;
+// }
+// let numb1 = funArr([92, 833, 125, 77, 773]);
+//
+// console.log(numb1);//не тот результат...
 
 // - створити функцію яка повертає найменьше число з масиву
 
 // - створити функцію яка приймає масив чисел
 // та складає значення елементів масиву та повертає його.
+//
+// function sumNumber (arr){
+//     let sum = 0;
+//     for (const all of arr) {
+//         sum += all;
+//     }
+//     return sum;
+// }
+// let sumNumber1 = sumNumber([4, 6, 7, 3]);
+//
+// console.log(sumNumber1);
+
 
 // - створити функцію яка приймає масив чисел
 // та повертає середнє арифметичне його значень.
+//
+// function middleNumber (arr){
+//     let middle = 0;
+//     for (const all of arr) {
+//         middle += all;
+//     }
+//     return middle/arr.length;
+// }
+// let middleNumber1 = middleNumber([4, 6, 7, 3]);
+//
+// console.log(middleNumber1);
 
 // - Створити функцію яка приймає масив будь яких объектів,
 // та повертає значення кількості об'єктів в масиві
+//
+// let books = [{name:`foreword`, pageCount: 14},
+//     {name:`boyWhoLived`, pageCount: 18},
+//     [3, 4, 77],
+//     {name:`vanishingGlass`, pageCount: 13},
+//     true,
+//     {name:`lettersFromNoOne`, pageCount: 17},
+//     {name:`afterword`, pageCount: 19}]
+//
+// function countObj (arrObj) {
+//     let Obj = 0;
+//     for (let count of arrObj) {
+//         if (typeof count === 'object'){
+//             Obj++;
+//         }
+//     }
+//     return Obj;
+// }
+// let number = countObj(books);
+// console.log(number)
 
 // - Створити функцію яка приймає масив будь яких объектів,
 // та повертає загальн кількість полів в них
+//
+// let books = [{name:`foreword`, pageCount: 14},
+//     {name:`boyWhoLived`, pageCount: 18},
+//     [3, 4, 77],
+//     {name:`vanishingGlass`, pageCount: 13},
+//     true,
+//     {name:`lettersFromNoOne`, pageCount: 17},
+//     {name:`afterword`, pageCount: 19}]
+//
+// function countObj (arrObj) {
+//     let Obj = 0;
+//     for (let count of arrObj) {
+//         if (typeof count === 'object') {
+//             for (let key in count) {
+//                 Obj++;
+//             }
+//         }
+//     }
+//     return Obj;
+// }
+// let number = countObj(books);
+// console.log(number)
 
 // - створити функцію  яка скаладає значення елементів з
 // однаковими індексами  та повертає новий результуючий масив.
@@ -81,6 +193,8 @@
 //     [2,3,4,5]
 // результат
 //     [3,5,7,9]
+
+
 // - *** приймає масив та число "i", та міняє місцями
 // об`єкт який знаходиться в індексі "i" на "i+1"
 // - *** створити функцію яка буде переносити елементи
