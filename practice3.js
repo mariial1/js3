@@ -99,15 +99,27 @@
 //     console.log(arr);
 //     let numb = arr[0];
 //     for (const xxx of arr) {
-//         if(numb < arr) numb = arr
+//         if(numb < xxx) numb = xxx
 //     }
 //     return numb;
 // }
 // let numb1 = funArr([92, 833, 125, 77, 773]);
 //
-// console.log(numb1);//не тот результат...
+// console.log(numb1);
 
 // - створити функцію яка повертає найменьше число з масиву
+
+function funArr(arr){
+    console.log(arr);
+    let numb = arr[0];
+    for (const xxx of arr) {
+        if(numb > xxx) numb = xxx
+    }
+    return numb;
+}
+let numb1 = funArr([72, 833, 15, 87, 773]);
+
+console.log(numb1);
 
 // - створити функцію яка приймає масив чисел
 // та складає значення елементів масиву та повертає його.
