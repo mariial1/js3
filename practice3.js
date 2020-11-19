@@ -108,18 +108,18 @@
 // console.log(numb1);
 
 // - створити функцію яка повертає найменьше число з масиву
-
-function funArr(arr){
-    console.log(arr);
-    let numb = arr[0];
-    for (const xxx of arr) {
-        if(numb > xxx) numb = xxx
-    }
-    return numb;
-}
-let numb1 = funArr([72, 833, 15, 87, 773]);
-
-console.log(numb1);
+//
+// function funArr(arr){
+//     console.log(arr);
+//     let numb = arr[0];
+//     for (const xxx of arr) {
+//         if(numb > xxx) numb = xxx
+//     }
+//     return numb;
+// }
+// let numb1 = funArr([72, 833, 15, 87, 773]);
+//
+// console.log(numb1);
 
 // - створити функцію яка приймає масив чисел
 // та складає значення елементів масиву та повертає його.
@@ -134,7 +134,6 @@ console.log(numb1);
 // let sumNumber1 = sumNumber([4, 6, 7, 3]);
 //
 // console.log(sumNumber1);
-
 
 // - створити функцію яка приймає масив чисел
 // та повертає середнє арифметичне його значень.
@@ -199,13 +198,22 @@ console.log(numb1);
 // console.log(number)
 
 // - створити функцію  яка скаладає значення елементів з
-// однаковими індексами  та повертає новий результуючий масив.
+// однаковими індексами та повертає новий результуючий масив.
 //     Приклад
 //     [1,2,3,4]
 //     [2,3,4,5]
 // результат
 //     [3,5,7,9]
-
+//
+// function splitArray(arry1, array2){
+//     let result = [];
+//     for (let i = 0; i < arry1.length; i++) {
+//         result.push(arry1[i]+array2[i]);
+//     }
+//     return result;
+// }
+// let splitArray1 = splitArray([1,2,3,4], [2,3,4,5]);
+// console.log(splitArray1);
 
 // - *** приймає масив та число "i", та міняє місцями
 // об`єкт який знаходиться в індексі "i" на "i+1"
@@ -217,7 +225,7 @@ console.log(numb1);
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
-//
+
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
